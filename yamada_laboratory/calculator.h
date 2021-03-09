@@ -6,7 +6,7 @@
 #define MAX_INPUT_SIZE 100
 #define MAX_DIGIT 10
 #define MAX_TYPE_LENGTH 10
-#define TEST 1
+#define TEST 0
 
 #define NUM			1
 #define PLUS		2

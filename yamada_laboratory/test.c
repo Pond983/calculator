@@ -1,3 +1,6 @@
+﻿// テスト駆動開発によるテスト用ファイル
+// calculator.hのTESTの値を1にすることで使用可能
+
 #include <stdio.h>
 #include <string.h>
 #include "calculator.h"

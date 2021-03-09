@@ -67,41 +67,26 @@ void parse(char* input, struct formula* parsed_input) {
 		case '-':
 			buf[0] = ch;
 			buf[1] = '\0';
-			/*strcpy_s(parsed_input->formula[parsed_input->length], MAX_DIGIT, buf);
-			parsed_input->type[parsed_input->length] = 'M';
-			parsed_input->length++;;*/
 			add_formula(parsed_input, buf, MINUS);
 			break;
 		case '*':
 			buf[0] = ch;
 			buf[1] = '\0';
-			/*strcpy_s(parsed_input->formula[parsed_input->length], MAX_DIGIT, buf);
-			parsed_input->type[parsed_input->length] = 'B';
-			parsed_input->length++;*/
 			add_formula(parsed_input, buf, MULTIPLE);
 			break;
 		case '/':
 			buf[0] = ch;
 			buf[1] = '\0';
-			/*strcpy_s(parsed_input->formula[parsed_input->length], MAX_DIGIT, buf);
-			parsed_input->type[parsed_input->length] = 'D';
-			parsed_input->length++;*/
 			add_formula(parsed_input, buf, DIVIDE);
 			break;
 		case '(':
 			buf[0] = ch;
 			buf[1] = '\0';
-			/*strcpy_s(parsed_input->formula[parsed_input->length], MAX_DIGIT, buf);
-			parsed_input->type[parsed_input->length] = 'L';
-			parsed_input->length++;*/
 			add_formula(parsed_input, buf, LEFT_BRACKET);
 			break;
 		case ')':
 			buf[0] = ch;
 			buf[1] = '\0';
-			/*strcpy_s(parsed_input->formula[parsed_input->length], MAX_DIGIT, buf);
-			parsed_input->type[parsed_input->length] = 'R';
-			parsed_input->length++;*/
 			add_formula(parsed_input, buf, RIGHT_BRACKET);
 			break;
 		default:
@@ -116,13 +101,9 @@ void parse(char* input, struct formula* parsed_input) {
 				}
 				buf[i] = '\0';
 				input_p = end_num_p;
-				/*strcpy_s(parsed_input->formula[parsed_input->length], MAX_DIGIT, buf);
-				parsed_input->type[parsed_input->length] = 'N';
-				parsed_input->length++;*/
 				add_formula(parsed_input, buf, NUM);
 			}
 			break;
-			printf("ch is %c\n", ch);
 		}
 	}
 }
@@ -146,6 +127,5 @@ struct formula lexical_analyser(char *input) {
 	
 	strip(input, striped_input);
 	parse(striped_input, &parsed_input);
-	print_formula(&parsed_input);
 	return parsed_input;
 }
