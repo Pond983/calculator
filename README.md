@@ -1,4 +1,4 @@
-# calculator
+# Calculator program.
 This is the Calculator program.
 This calculate input formula.
 
