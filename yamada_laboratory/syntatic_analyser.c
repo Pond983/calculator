@@ -22,12 +22,12 @@ void E(void) {
 	while (input_formula.type[position] == PLUS || input_formula.type[position] == MINUS) {
 		if (input_formula.type[position] == PLUS) {
 			position++;
-			F();
+			T();
 			puttoken("+", PLUS);
 		}
 		else {
 			position++;
-			F();
+			T();
 			puttoken("-", MINUS);
 		}
 	}

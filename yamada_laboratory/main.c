@@ -5,7 +5,7 @@
 int main(void) {
 	
 	if (TEST) {
-		if (test()) {
+		if (!test()) {
 			printf("Error exist!\n");
 		}
 		else {
@@ -17,12 +17,14 @@ int main(void) {
 	input[0] = '\0';
 	struct formula input_formula;
 	struct formula porland_formula;
+	printf("> ");
+	get_line(input);
 	while (strcmp(input, "quit") != 0) {
-		printf("> ");
-		get_line(input);
 		input_formula = lexical_analyser(input);
 		porland_formula = syntatic_analyser(input_formula);
 		printf("%d\n", calc_porland(porland_formula));
+		printf("> ");
+		get_line(input);
 	}
 	return 0;
 }
