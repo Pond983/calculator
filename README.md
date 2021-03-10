@@ -23,7 +23,7 @@ You can use four opelands and curl bracket in formula.
 - "/"
 - "(" ")"
 
-if you want to stop program, type "quit" and end the program.
+if you want to stop program, type "quit" and it will turn off.
 
 ```shell
 
