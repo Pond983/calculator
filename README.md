@@ -9,6 +9,8 @@ You also use calculator.sh to turn on calculator easily.
 ```shell
 
 ./calculator.sh
+> 6+5-4*3+(2+1)
+2
 >
 
 ```
