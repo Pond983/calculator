@@ -15,13 +15,23 @@ You also use calculator.sh to turn on calculator easily.
 
 ```
 
-# Specifications
+# Features
 You can use four opelands and curl bracket in formula.
 - "+"
 - "-:
 - "*"
 - "/"
 - "(" ")"
+
+And if you type many branks and tabs, this ignore them.
+
+```shell
+
+>        1                      +2
+3
+>
+
+```
 
 if you want to stop program, type "quit" and it will turn off.
 
