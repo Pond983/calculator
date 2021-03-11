@@ -15,6 +15,17 @@ You also use calculator.sh to turn on calculator easily.
 
 ```
 
+In addtion, you can use makefile.
+makefile creates calculator and you can conduct calculator.
+
+```shell
+
+make
+./calculator
+> 
+
+```
+
 # Features
 You can use four opelands and curl bracket in formula.
 - "+"
